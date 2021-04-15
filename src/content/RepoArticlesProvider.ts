@@ -79,7 +79,8 @@ export class RepoArticlesProvider {
         `⚡ ${articles.length} articles fetched from ${devProfileLink}`
       );
       for(const article of articles) {
-        core.info(`\n\n 📝 "${article.id }"`);
+        console.log(article.id);
+        console.log(article.body_markdown);
       }
     }
     
