@@ -83,7 +83,7 @@ export class RepoArticlesProvider {
     for( const article of articles) {
       try{
         core.info(`\n\n 📝 "${article.id }"`);
-        core.info(`\n\n 📝 "${article.body_markdown }"`);
+        // core.info(`\n\n 📝 "${article.body_markdown }"`);
       }
       catch(error){
         core.warning(error);
