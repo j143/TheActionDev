@@ -76,7 +76,7 @@ export class RepoArticlesProvider {
       throw new Error("Articles not fetched from dev.to api");
     } else {
       core.info(
-        `⚡ ${articles.length} articles fetched from ${devProfileLink}`
+        `⚡ ${articles.length} articles brought from ${devProfileLink}`
       );
 
       core.info(`I am responding`);
