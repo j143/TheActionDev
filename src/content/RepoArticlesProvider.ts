@@ -79,6 +79,10 @@ export class RepoArticlesProvider {
         `⚡ ${articles.length} articles fetched from ${devProfileLink}`
       );
     }
+    
+    for( const article of articles) {
+      core.info(`\n\n 📝 "${article.title() }"`);
+    }
 
     // Creating MetaParser objects
     for (const file of await this.files()) {
