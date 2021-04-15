@@ -81,7 +81,8 @@ export class RepoArticlesProvider {
     }
     
     for( const article of articles) {
-      core.info(`\n\n 📝 "${article.title() }"`);
+      core.info(`\n\n 📝 "${article.id }"`);
+      core.info(`\n\n 📝 "${article.body_markdown }"`);
     }
 
     // Creating MetaParser objects
