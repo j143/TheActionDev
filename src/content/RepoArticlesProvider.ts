@@ -78,17 +78,20 @@ export class RepoArticlesProvider {
       core.info(
         `⚡ ${articles.length} articles fetched from ${devProfileLink}`
       );
+      for(const article of articles) {
+        core.info(`\n\n 📝 "${article.id }"`);
+      }
     }
     
-    for( const article of articles) {
-      try{
-        core.info(`\n\n 📝 "${article.id }"`);
-        // core.info(`\n\n 📝 "${article.body_markdown }"`);
-      }
-      catch(error){
-        core.warning(error);
-      }
-    }
+    // for( const article of articles) {
+    //   try{
+    //     core.info(`\n\n 📝 "${article.id }"`);
+    //     // core.info(`\n\n 📝 "${article.body_markdown }"`);
+    //   }
+    //   catch(error){
+    //     core.warning(error);
+    //   }
+    // }
 
     // Creating MetaParser objects
     for (const file of await this.files()) {
