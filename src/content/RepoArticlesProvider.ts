@@ -78,6 +78,8 @@ export class RepoArticlesProvider {
       core.info(
         `⚡ ${articles.length} articles fetched from ${devProfileLink}`
       );
+
+      core.info(`I am responding`);
       for(const article of articles) {
         console.log(article.id);
         console.log(article.body_markdown);
